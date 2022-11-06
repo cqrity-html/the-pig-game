@@ -30,7 +30,7 @@ const changePlayer = function () {
 const holdScore = function () {
   if (players[currentPlayer].currentscore != 0) {
     players[currentPlayer].highscore += players[currentPlayer].currentscore;
-    if (players[currentPlayer].highscore >= 30) {
+    if (players[currentPlayer].highscore >= 100) {
       winnerPlayer = currentPlayer;
       playersNames[winnerPlayer].textContent = `Игрок ${players[winnerPlayer].name} выиграл!`;
       playersFields[winnerPlayer].classList.add("player--winner");
